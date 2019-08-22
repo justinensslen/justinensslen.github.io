@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>TEST</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <h1>TEST</h1>
-        <p>Body</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name='author' content='Justin Ensslen | JJETHEGAMER'>
+    <meta name='designer' content='Justin Ensslen | JJETHEGAMER'>
+    <meta name='owner' content='Justin Ensslen | JJETHEGAMER'>
+    <title>This is me. Justin</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo/JJE-Logo_Original_Blue_Official_2018_512x.png"/>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <script src="jquery.min.js"></script>
+    <script src="animations.js"></script>
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<section class="head_content">
+  <header>
+    <nav class="jje_nav" id="header"><a class="jje_logo"></a><a></a><a class="active_nav_site">HOME</a><a href="about">ABOUT</a><a href="work">WORK</a></nav>
+  </header>
+
+  <div class="left-half">
+      <div class="centered_head_content">
+            <h5 class="hello_color">HELLO</h5>
+            <h1>I`m Justin</h1>
+            <p>a hobby web Designer</p>
+            <div class="button_left"><a href="#content"><button class="normal_btn">to More</button></a></div>
+        </div>
+  </div>
+  <div class="right-half">
+  </div>
+        <div class="plop_hover_box">
+            <div class="phbc">
+            <a target="_blank" href="https://www.instagram.com/justin_jje/"><i class="fab fa-instagram icon_hover"></i></a><a target="_blank" href="https://www.youtube.com/channel/UC61a3nMG8D4fhfxAsPFCr5A"><i class="fab fa-youtube icon_hover"></i></a><a href="mailto:creativethingsofficial@gmail.com"><i class="fas fa-envelope icon_hover"></i></a>
+            </div>
+        </div>
+</section>
+<div class="scroll_to_content" id="content"></div>
+<main class="main_content">
+    <div class="mcs">
+        <p class="mcs_t fadescroll">Specilizing in</p>
+        <p class="mcs_p moveleft">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+    </div>
+    <div class="flex_box_jje">
+        <div class="flex_box_content_jje box_first_left hover-zoom">
+            <p class="fbcj_t">UI/UX Design</p>
+            <p class="fbcj_d">Here for more information is all to UI/UX Design. That's easily normal placaholder text, for the boxes.
+            <br><br><button class="white_btn">LEARN MORE</button></p>
+        </div>
+        <div class="flex_box_content_jje box_first_right hover-zoom">
+            <p class="fbcj_t">Photography &amp; Design</p>
+            <p class="fbcj_d">Here for more information is all to Photography Design. That's easily normal placaholder text, for the boxes.
+            <br><br><button class="white_btn">LEARN MORE</button></p>
+        </div>
+    </div>
+
+</main>
+    
+<!-- Footer -->
+
+<footer class="footer_all">
+<div class="btn_up_box">
+    <a href="#top" class="btn_up"><i class="fas fa-angle-up fa-2x"></i></a>
+    <a href="#top" class="btn_up_mobile" onclick="topFunction()" id="myBtn"><i class="fas fa-angle-up fa-2x"></i></a>
+</div>
+
+<br>Create &amp; Desgined by Justin Ensslen<br>
+
+<div class="hr_box">
+<hr style="border:solid #f2f2f2 1px;">
+</div>
+
+<a target="_blank" href="http://www.instagram.com/justin_jje"><i class="fab fa-instagram fa-2x i-footer"></i></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://www.youtube.com/channel/UC61a3nMG8D4fhfxAsPFCr5A"><i class="fab fa-youtube fa-2x i-footer"></i></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://twitter.com/justinensslen"><i class="fab fa-twitter fa-2x i-footer"></i></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="mailto:creativethingsofficial@gmail.com"><i class="fas fa-envelope fa-2x i-footer"></i></a>
+
+</footer>
+<!-- Footer ENDE -->
+    
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
 </html>

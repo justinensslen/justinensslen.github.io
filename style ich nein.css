@@ -44,10 +44,10 @@ font-size: 1.55rem;
 
 .right-half 
 {
-background-image: url(img/wallhaven-414113.jpg);
-background-position: 33.8vw 0vw; /* background-position: -283px 0px; */
+background-image: url(img/cutout_jje-2.jpg);
+background-position: 21vw 0vw; /* background-position: -283px 0px; */
 background-attachment: fixed;
-background-size: 151vh;
+background-size: cover;
 background-repeat: no-repeat;
 background-color: #ffffff;
 float: left;
@@ -475,9 +475,8 @@ width: 100%;
 height: 100%;
 font-family: 'Open Sans', sans-serif;
 font-size: 1.55rem;
-background-image: url(img/wallhaven-414113.jpg);
+background-image: url(img/cutout_jje-2.jpg);
 background-position: center;
-/* background-position: -110vw 8vw; */
 background-attachment: fixed;
 background-size: 146vh;
 background-repeat: no-repeat;
