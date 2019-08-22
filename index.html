@@ -1,11 +1,246 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>TEST</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <h1>TEST</h1>
-        <p>Body</p>
-    </body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>JJE</title>
+
+	<link rel="icon" href="img/logo/jje_logo.png" type="image/png">
+    <meta name="theme-color" content="#333333"> <!-- 3b69ce -->
+
+	<link rel="stylesheet" href="style.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="script.js"></script>
+    
+
+    <!-- Video-Player -->
+
+		<link href="scripts/videojs/video-js.css" rel="stylesheet">
+		<script src="scripts/videojs/videojs-ie8.min.js"></script>
+		<script src="scripts/videojs/video.js"></script>
+
+	    <script src="./audiojs/audio.min.js"></script>
+
+	   <script>
+		audiojs.events.ready(function() {
+		audiojs.createAll();
+		});
+	   </script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+<script>
+function openNav() {
+  document.getElementById("header_nav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("header_nav").style.width = "0%";
+}
+</script>
+    
+</head>
+<body>
+
+    <header id="header_jje">
+        <div id="float_left">
+            <p id="jje_logo"></p>
+            <span id="jje_menu" class="" onclick="openNav()">&#9776;</span>
+        </div>
+        <nav id="header_nav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    
+    </header>
+    <main id="main_jje">
+        <section id="entrace_area">
+            <a href="#content_2"><button class="jje_button">More Info</button></a>
+        </section>
+        
+            <section id="content_1">
+                <h1>TITEL</h1>
+                <p class="normal_paragraph">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+                <img id="img_barbeque" src="img/lib/barbecue-bbq-berries.jpg" alt="barbecue bbq berries">
+                <p class="normal_paragraph">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+
+            <div class="flex_container">
+                <div class="flex_boxes">
+                    <div class="jje_class">
+                        <img src="img/lib/barbecue-bbq-berries.jpg" alt="barbeque bbq berries" style="width: 100%; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+                        <div class="text_container">
+                            <h4><b>Food</b></h4> 
+                            <p>
+                            First row<br>
+                            Lorem Ipsum text<br>
+                            Third row<br>
+                            get more info -> here<br>
+                            Fifth row<br>
+                            Last row
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_boxes">
+                    <div class="jje_class">
+                        <img src="img/lib/apple_tree.jpg" alt="Apple Tree" style="width: 100%; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+                        <div class="text_container">
+                            <h4><b>Nature</b></h4> 
+                            <p>
+                            First row<br>
+                            Second row<br>
+                            Third row<br>
+                            Fourth row<br>
+                            Fifth row<br>
+                            Last row
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_boxes">
+                    <div class="jje_class">
+                        <img src="img/lib/mockup.jpg" alt="MockUp Broschure" style="width: 100%; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+                        <div class="text_container">
+                            <h4><b>Cake</b></h4> 
+                            <p>
+                            First row<br>
+                            Second row<br>
+                            Third row<br>
+                            Fourth row<br>
+                            Fifth row<br>
+                            Last row
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_boxes">
+                    <div class="jje_class">
+                        <img src="img/lib/mr_bean.jpg" alt="Mr. Bean" style="width: 100%; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+                        <div class="text_container">
+                            <h4><b>Funny Moments</b></h4> 
+                            <p>
+                            First row<br>
+                            Second row<br>
+                            Third row<br>
+                            Fourth row<br>
+                            Fifth row<br>
+                            Last row
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <p class="normal_paragraph">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+            </section>
+        <section id="content_2"></section>
+        <section id="content_3">
+<br>
+<section class="cards">
+<article class="card card--1">
+  <div class="card__info-hover">
+    <svg class="card__like"  viewBox="0 0 24 24">
+    <path fill="#3B69CE" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+</svg>
+      <div class="card__clock-info">
+        <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+        </svg><span class="card__time">15 min</span>
+      </div>
+    
+  </div>
+  <div class="card__img"></div>
+  <a href="#" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__category"> Recipe</span>
+    <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
+    <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+  </div>
+</article>
+  
+  
+<article class="card card--2">
+  <div class="card__info-hover">
+    <svg class="card__like"  viewBox="0 0 24 24">
+    <path fill="#3B69CE" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+</svg>
+      <div class="card__clock-info">
+        <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+        </svg><span class="card__time">5 min</span>
+      </div>
+    
+  </div>
+  <div class="card__img"></div>
+  <a href="#" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__category"> Travel</span>
+    <h3 class="card__title">Discover city's</h3>
+    <span class="card__by"><br>by <a href="#" class="card__author" title="author">John Doe</a></span>
+  </div>
+</article>
+  
+  </section>
+    
+    
+            <p class="normal_paragraph">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+        </section>
+        <section id="content_4">
+            <div id="title_4"><p>Title over Image</p></div>
+        </section>
+        <section id="content_5">
+            <h4><br>Title</h4>
+            <p class="normal_paragraph">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+
+<div class="video_container">
+    <video id="my-video" class="video-js" controls preload="auto" poster="img/video/slmx-jje.jpg" data-setup="{}" style="float: left;">
+		<source src="video\silhouette_aether_jje.mp4" type='video/mp4'>
+		<p class="vjs-no-js">
+		To view this video please enable JavaScript, and consider upgrading to a web browser that
+		<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+	</p>
+	</video>
+</div>
+
+            <p class="normal_paragraph">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+        </section>
+    </main>
+    <footer id="footer_jje">
+    
+        <div class="footer_left">&copy; JJEs Template</div>
+        <div class="footer_right">Desgined by <a target="_blank" href="https://jjethegamer.000webhostapp.com">Justin Ensslen | JJETHEGAMER</a></div>
+    
+    </footer>
+
+</body>
 </html>
